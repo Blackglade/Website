@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto:300,400,700,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+// Font Sizing generated using the Perfect Fifths Scale via https://www.modularscale.com/
+$baseline: 1rem;
+$ratio: 1.5;
+
+@function scale($number){
+	$result: $baseline;
+
+	@if $number > 0 {
+		@for $i from 1 through $number {
+			$result: $result * $ratio;
+		}
+	} @else if $number < 0 {
+		@for $i from $number through -1 {
+			$result: $result / $ratio;
+		}
+	}
+  
+	@return $result;
+}
+
+
+* {
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility;
+	line-height: 150%;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0,0,0,0.87);
+	word-wrap: break-word;
+	font-kerning: normal;
+}
+
+code, kbd, samp, pre {
+	font-family: 'Inconsolata', monospace;
+	padding: 4px;
+	border-radius: 4px;
+	background: #EEE;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong, th {
+	font-weight: 700;
+	color: rgba(0,0,0,0.87);
+}
+
+h1, h2, h3, h4, h5, h6, p, img, ul, ol, pre, table, blockquote, iframe {
+	margin-bottom: $baseline;
+}
+
+ul, ol {
+	margin-left: $baseline;
+	list-style-position: outside;
+	list-style-image: none;
+}
+
+ul, ol, p {
+	li {
+		margin-left: $baseline;
+		margin-bottom: calc(#{$baseline} / 2);
+		margin-top: calc(#{$baseline} / 2);
+	}
+}
+
+li {
+	margin-bottom: calc(#{$baseline} / 2);
+}
+
+
+blockquote *:last-child, li *:last-child, p *:last-child  {
+	margin-bottom: 0;
+}
+
+blockquote {
+	margin-left: $baseline;
+	margin-right: $baseline;
+}
+
+table {
+	font-size: scale(0);
+	border-collapse: collapse;
+	width: 100%;
+}
+
+h1 {
+	font-size: scale(4);
+}
+
+h2 {
+	font-size: scale(3);
+}
+
+h3 {
+	font-size: scale(2);
+}
+
+h4 {
+	font-size: scale(1);
+}
+
+h5 {
+	font-size: scale(0);
+}
+
+h6, pre, code {
+	font-size: scale(-1);
+}
+
+p {
+	font-size: scale(0);
+}
+
+img {
+	max-width: 100%;
+}
+
+thead {
+	text-align: left;
+}
+
+hr {
+	margin-bottom: calc(#{$baseline} - 1px);
+	background: hsla(0, 0%, 0%, 0.2);
+	border: none;
+	height: 1px;
+}
+
+td, th {
+	text-align: left;
+	border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+	font-feature-settings: "tnum";
+	padding-left: 1.11067rem;
+	padding-right: 1.11067rem;
+	padding-top: 0.833rem;
+	padding-bottom: calc(0.833rem - 1px);
+
+	&:first-child {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
