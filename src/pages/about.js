@@ -216,7 +216,7 @@ const VideoGames = styled.div`
 	}
 `
 
-export default function AboutPage(){
+export default () => {
 	const[x, setX] = useState(0)
 	const GLaDOS = (typeof Audio === `undefined`) ? 0 : new Audio(sound);
 	return(
@@ -277,6 +277,7 @@ export default function AboutPage(){
 							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/470260'><img alt='Event[0]' src='https://steamcdn-a.akamaihd.net/steam/apps/470260/header.jpg' /></a>
 							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/698780'><img alt='Doki Doki Literature Club' src='https://steamcdn-a.akamaihd.net/steam/apps/698780/header.jpg' /></a>
 							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/379720'><img alt='Doom' src='https://steamcdn-a.akamaihd.net/steam/apps/379720/header.jpg' /></a>
+							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/322500'><img alt='SUPERHOT' src='https://steamcdn-a.akamaihd.net/steam/apps/322500/header.jpg' /></a>
 							<img className='glados' src={glados} alt='Glados' onClick={() => GLaDOS.play()} />
 						</div>
 					</VideoGames>

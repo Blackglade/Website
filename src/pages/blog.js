@@ -71,7 +71,7 @@ export default () => (
 			</div>
 			<BlogPosts>
 				{data.allMarkdownRemark.nodes.map((post, index) => (
-					<div className='post'><Link to={post.fields.url} style={{opacity: 1}}>
+					<div key={index} className='post'><Link to={post.fields.url} style={{opacity: 1}}>
 						<div>
 							<img alt={post.frontmatter.title} src={require(`../../blog/${post.fields.year}/assets/${post.frontmatter.asset_folder}/header.jpg`)} />
 							<h4>{post.frontmatter.title}</h4>
