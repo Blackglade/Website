@@ -278,6 +278,7 @@ export default () => {
 							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/698780'><img alt='Doki Doki Literature Club' src='https://steamcdn-a.akamaihd.net/steam/apps/698780/header.jpg' /></a>
 							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/379720'><img alt='Doom' src='https://steamcdn-a.akamaihd.net/steam/apps/379720/header.jpg' /></a>
 							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/322500'><img alt='SUPERHOT' src='https://steamcdn-a.akamaihd.net/steam/apps/322500/header.jpg' /></a>
+							<a target='_blank' rel='noopener noreferrer' href='https://store.steampowered.com/app/264710'><img alt='Subnautica' src='https://steamcdn-a.akamaihd.net/steam/apps/264710/header.jpg' /></a>
 							<img className='glados' src={glados} alt='Glados' onClick={() => GLaDOS.play()} />
 						</div>
 					</VideoGames>
