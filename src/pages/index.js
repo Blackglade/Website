@@ -118,7 +118,7 @@ export default () => {
 				<Name style={{ backgroundPosition: `${x}% ${y}%` }}>Harsh Baid</Name>
 				{(toggle) ? 
 					(<h4 style={{opacity: 0.8}}>harsh@harshbaid.com</h4>) :
-					(<h4><Link to='/projects/'>projects</Link> / <Link to='/blog/'>blog</Link> / <Link to='/about/'>about</Link></h4>) 
+					(<h4><Link to='/blog/'>blog</Link> / <Link to='/about/'>about</Link></h4>) 
 				}
 				<a onMouseEnter={() => setToggle(true)} onMouseLeave={() => setToggle(false)} href="mailto:harsh@harshbaid.com"><Email /></a>
 				<a href="https://github.com/Blackglade" rel="noopener noreferrer" target="_blank"><GitHub /></a>

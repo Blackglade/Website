@@ -5,9 +5,7 @@ asset_folder: 2
 ---
 
 ### Introduction
-[Rated Awesome (RA)](https://ratedawesome.com/) is an online gaming community I started back in March of 2012. Obsessed with [Team Fortress 2](https://www.teamfortress.com/) at the time and it’s huge player base, RA was my attempt to get more involved with the community. We started off small, hosting only one game server, but over the next couple of years would eventually expand to four. You can find out more about the overall project on [my portfolio page](/portfolio/ratedawesome/) or check out [our website](https://ratedawesome.com/).
-
-As with any public group, the rise in popularity and player growth came with its fair share of obstacles. This mostly involved general server maintenance and creating an online presence our players could associate with (branding, style, forums). In an attempt to keep costs low (instead of hiring help), I took it upon myself to tackle each of these obstacles and what came next were a series of erratic changes spanned out over the next couple of years. Below is the remnants of the evolution of Rated Awesome.
+[Rated Awesome (RA)](https://ratedawesome.com/) is an online gaming community I started back in March of 2012. Obsessed with [Team Fortress 2](https://www.teamfortress.com/) at the time and it’s huge player base, RA was my attempt to get more involved with the community. What initially started as a side project to create a place for a few tightknit friends, grew into a massive player base across 4 different servers, 200+ players, and 1500 unique visitors a month. As with any big community, the rise in popularity and player growth came with its fair share of obstacles. This mostly involved general server maintenance and creating an online presence our players could associate with (branding, style, forums). In an attempt to keep costs low (instead of hiring help), I took it upon myself to tackle each of these obstacles and what came next were a series of erratic changes spanned out over the next couple of years. Below is the remnants of the evolution of Rated Awesome.
 
 ### Evolving Logo
 
