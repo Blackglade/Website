@@ -1,7 +1,7 @@
 ---
 title: "Evolution of Rated Awesome"
 date: "2017-06-03"
-asset_folder: 2
+asset_folder: 1
 ---
 
 ### Introduction
