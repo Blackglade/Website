@@ -1,7 +1,7 @@
 ---
 title: "Working with EDGI"
 date: "2017-08-29"
-asset_folder: 4
+asset_folder: 3
 ---
 
 ### Introduction

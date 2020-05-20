@@ -1,7 +1,7 @@
 ---
 title: "The Plus Project: Part 1"
 date: "2017-07-29"
-asset_folder: 3
+asset_folder: 2
 ---
 
 ### Introduction
