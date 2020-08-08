@@ -1,7 +1,7 @@
 ---
 title: "My Room"
 date: "2018-06-03"
-asset_folder: 2
+asset_folder: 1
 ---
 
 As my time in Maryland comes to a close, I can’t help but reminisce about all the fun I’ve had these past few months. One of the best things about moving back to College Park, Maryland was finally being able to live in an apartment with my own room/bathroom. Growing up in New York and moving for college, I’ve always had to share a room. Whether it was my sister for the better part of my childhood or my freshmen and sophomore year roommates.

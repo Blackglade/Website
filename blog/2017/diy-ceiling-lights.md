@@ -1,7 +1,7 @@
 ---
 title: "DIY Ceiling Lights"
 date: "2017-10-22"
-asset_folder: 4
+asset_folder: 1
 ---
 ### Introduction
 
