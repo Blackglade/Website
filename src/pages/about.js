@@ -26,12 +26,14 @@ const Layout = styled.div`
 
 const Perspective = styled.ul`
 	list-style: none;
-	margin-top: 3.5rem;
+	margin-top: 12.5rem;
+	margin-bottom: -10rem;
+	width: 100%;
 
 	li {
 		display: flex;
-		height: 7rem;
-		margin-top: -4.5rem;
+		height: 16rem;
+		margin-top: -13.5rem;
 
 		div {
 			width: 50%;
@@ -41,6 +43,7 @@ const Perspective = styled.ul`
 				width: 200%;
 				text-align: center;
 				font-weight: 300;
+				white-space: nowrap;
 			}
 
 			&:nth-child(odd) h2 {
@@ -56,6 +59,7 @@ const Perspective = styled.ul`
 
 			span { 
 				display: inline-block;
+				white-space: nowrap;
 			}
 		}
 	}
@@ -206,7 +210,7 @@ export default () => {
 	const GLaDOS = (typeof Audio === `undefined`) ? 0 : new Audio(sound);
 
 	return(
-		<Layout onMouseMove={(e) => setX(e.pageX - ((typeof window === `undefined`) ? 0 : (window.innerWidth/2)))}>
+		<Layout onMouseMove={(e) => setX(e.pageX - ((typeof window === `undefined`) ? 0 : (window.innerWidth/2)))} onTouchMove={(e) => setX(e.pageX - ((typeof window === `undefined`) ? 0 : (window.innerWidth/2)))}>
 			<Helmet title='About Me'/>
 			<div className='container'><div className='wrapper'>
 				<img style={{maxWidth: '100%', borderRadius: '100%', marginTop: '3rem'}} src={me} alt='Harsh Baid' />

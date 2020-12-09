@@ -109,7 +109,7 @@ export default () => {
 	const[y, setY] = useState(20)
 	const[toggle, setToggle] = useState(false)
 	return(
-		<Layout onMouseMove={(e) => setX((e.pageX/100) + 40) & setY((e.pageY/100) + 20)}>
+		<Layout onMouseMove={(e) => setX((e.pageX/100) + 40) & setY((e.pageY/100) + 20)} onTouchMove={(e) => setX((e.pageX/100) + 40) & setY((e.pageY/100) + 20)}>
 			<div id="stars"></div>
 			<div id="stars2"></div>
 			<div id="stars3"></div>
