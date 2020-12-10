@@ -9,11 +9,13 @@ import favicon from '../images/favicon.png'
 
 const Layout = styled.div`
 	background: url(${favicon}) 0 0 repeat;
+	height: 100%;
 
 	.container {
 		background: #F9F9F9;
 		max-width: 1500px;
 		margin: 0 auto;
+		height: 100%;
 
 		.wrapper {
 			display: flex;
