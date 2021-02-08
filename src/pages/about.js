@@ -16,6 +16,7 @@ const Layout = styled.div`
 		max-width: 1500px;
 		margin: 0 auto;
 		height: 100%;
+		overflow: auto;
 
 		.wrapper {
 			display: flex;
