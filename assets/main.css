@@ -44,6 +44,15 @@ a, a:visited {
 	animation: RP .1s infinite;
 }
 
+#security:after {
+	content: 'Web';
+	position: absolute;
+	color: #ff0000;
+	z-index: -1;
+	left: 4px;
+	animation: FP .1s infinite; 
+}
+
 @media all and (max-width: 550px){
 	h3 {
 		flex-direction: column;
@@ -53,15 +62,6 @@ a, a:visited {
 	h3 svg, #security {
 		margin: .5rem 0 !important;
 	}
-}
-
-.security:after {
-	content: 'Web';
-	position: absolute;
-	color: #ff0000;
-	z-index: -1;
-	left: 4px;
-	animation: FP .1s infinite; 
 }
 
 @keyframes dash {
