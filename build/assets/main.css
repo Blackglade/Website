@@ -1,0 +1,83 @@
+body { 
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: fixed;
+	background: #000;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+summary {
+	outline: none;
+}
+
+a, a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#name {
+	font-weight: 900;
+	font-size: 6.5rem;
+	margin: 0 0 0 -6px;
+	color: transparent;
+	background: url('./cloth.png') repeat;
+	background-size: 75%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-position: 50% 50%;
+}
+
+#security {
+	z-index: 10;
+	position: relative;
+	margin: 0 .5rem;
+}
+
+#security:before {
+	content: 'Web';
+	position: absolute;
+	color: #00ffff;
+	z-index: -1;
+	left: 1;
+	animation: RP .1s infinite;
+}
+
+@media all and (max-width: 550px){
+	h3 {
+		flex-direction: column;
+		align-items: flex-start !important;
+	}
+
+	h3 svg, #security {
+		margin: .5rem 0 !important;
+	}
+}
+
+.security:after {
+	content: 'Web';
+	position: absolute;
+	color: #ff0000;
+	z-index: -1;
+	left: 4px;
+	animation: FP .1s infinite; 
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes RP {
+	0% { right: 0; top: 0; } 
+	50% { right: 3px;  top: -3px;}
+	100% { right: 0; top: 0; } 
+}
+
+@keyframes FP {
+	0% { right: 0; top: 0; } 
+	50% { right: -3px;  top: 3px;}
+	100% { right: 0; top: 0; } 
+}

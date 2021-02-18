@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/reset.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/main.css">
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+		<style>
+			
+		</style>
+		<title>Harsh Baid</title>
+	</head>
+	<body>
+		<canvas style="width: 100%; height: 100%; outline: none; z-index: -1;" id="canvas3d"></canvas>
+		<div style="position: absolute; z-index: 2; top: 0; color: #FFF; margin: 1rem 0 0 2rem;">
+			<h1 id="name">Harsh Baid</h1>
+			<h3 style="display: flex; align-items: flex-end; margin: 1rem 0;">
+				I'm a <svg height="31px" style="width: 270px; margin: 0 .5rem;">
+					<defs>
+						<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+							<stop offset="0%"   stop-color="#00dbde" stop-opacity="1.0" />
+							<stop offset="100%" stop-color="#fc00ff" stop-opacity="1.0" />
+						</linearGradient>
+					</defs>
+					<text stroke-dasharray="500" stroke-dashoffset="500" style="animation: dash 4s ease-in-out forwards infinite;" stroke="url(#gradient)" stroke-width="2" y="27" font-size="2rem" fill="none">Software Engineer</text>
+				</svg> who loves the <span id="security">Web</span>
+			</h3>
+			<details>
+				<summary>Links</summary>
+				<ul>
+					<li><a href="mailto:harsh@harshbaid.com" target="_blank">harsh@harshbaid.com</a></li>
+					<li><a href="/resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="https://github.com/Blackglade" target="_blank">GitHub</a></li>
+					<li><a href="https://twitter.com/harshbaid97" target="_blank">Twitter</a></li>
+					<li><a href="https://www.youtube.com/channel/UC7TyXaKgEHiq4s15dSgInJQ/" target="_blank">YouTube</a></li>
+				</ul>
+			</details>
+			<p style="margin: 1rem 0;"><a href="https://web.archive.org/web/*/harshbaid.com" target="_blank">Previous Websites</a></p>
+			<details>
+				<summary>Favorite Video Games</summary>
+				<ul>
+					<li>Age of Mythology</li>
+					<li>Antichamber</li>
+					<li>The Binding of Isaac</li>
+					<li>Bioshock (Series)</li>
+					<li>Cuphead</li>
+					<li>Doki Doki Literature Club</li>
+					<li>Doom (Series)</li>
+					<li>Half-Life (Series)</li>
+					<li>Little Inferno</li>
+					<li>Metro (Series)</li>
+					<li>Portal (Series)</li>
+					<li>The Stanley Parable</li>
+					<li>Subnautica</li>
+					<li>SUPERHOT</li>
+					<li>Transistor</li>
+					<li>Team Fortress 2</li>
+					<li>Universal Paperclips</li>
+				</ul>
+			</details>
+		</div>
+
+		<script>
+			// Global namespace (backwards-compatibility)
+			var SPE = {};
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+		<script src="https://cdn.spline.design/lib/anime.min.js"></script>
+		<script src="https://cdn.spline.design/lib/spline.runtime.min.js"></script>
+		<script src="assets/scene.js"></script>
+		<script>
+			var SPE_USES_PREVIEW_IMAGE = false;
+			const runtime = new SpeRuntime( SPLINE_EXPORTED_SCENE, { fonts: [], images: [], models: [], animations: [] } );
+			runtime.run();
+			const name = document.getElementById("name");
+
+			document.addEventListener("mousemove", function(e) {
+				name.style.backgroundPosition = `${(4 * e.pageX / 100) + 50}% ${(10 * e.pageY / 100) + 50}%`
+			});
+		</script>
+	</body>
+</html>
