@@ -77,9 +77,10 @@
 			runtime.run();
 			const name = document.getElementById("name");
 
-			document.addEventListener("mousemove", function(e) {
-				name.style.backgroundPosition = `${(4 * e.pageX / 100) + 50}% ${(10 * e.pageY / 100) + 50}%`
-			});
+			const bgPosition = (e) => name.style.backgroundPosition = `${(4 * e.pageX / 100) + 50}% ${(10 * e.pageY / 100) + 50}%`
+
+			document.addEventListener("mousemove", bgPosition);
+			document.addEventListener("touchmove", bgPosition);
 		</script>
 	</body>
 </html>
